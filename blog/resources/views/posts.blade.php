@@ -5,20 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Blog</title>
+    <link rel="stylesheet" href="/app.css">
+    <title>Document</title>
 </head>
 <body>
-<h1>Hello world</h1>
+    <?php foreach ($posts as $post)?>
 
-<article>
-    <h1>
-        <a href="/posts/my-first-post">Post 1</a>
-    </h1>
-</article>
-<article>
-    <h1>
-        <a href="/posts/my-second-post">Post 2</a>
-    </h1>
-</article>
+        <article>
+            <?= $post; ?>
+        </article>
+
+    <?php endforeach; ?>
+
 </body>
 </html>
